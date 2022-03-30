@@ -108,7 +108,6 @@ export default {
         });
       } else {
         this.tasks[this.edittedTask].name = this.task;
-        console.log(this.edittedTask);
       }
 
       this.task = "";
@@ -121,7 +120,6 @@ export default {
     editTask(index) {
       this.task = this.tasks[index].name;
       this.edittedTask = index;
-      console.log(this.edittedTask);
       //this.edittedTask = null;
     },
     changeStatus(index) {
@@ -139,7 +137,6 @@ export default {
       const taskValue = JSON.parse(localStorage.getItem("tasks"));
       this.tasks = taskValue;
       this.count = true;
-      console.log(this.tasks);
       return this.tasks;
     },
   },
