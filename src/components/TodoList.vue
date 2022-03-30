@@ -38,8 +38,11 @@
           :key="index"
         >
           <th>
-            <span :class="{ finished: task.status === 'Finished' }">
-              {{ task.name }}{{ index }}</span
+            <span
+              class="nametask"
+              :class="{ finished: task.status === 'Finished' }"
+            >
+              {{ task.name }}</span
             >
           </th>
           <td>
