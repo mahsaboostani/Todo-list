@@ -109,7 +109,7 @@ export default {
       } else {
         this.tasks[this.edittedTask].name = this.task;
       }
-
+      this.edittedTask = null;
       this.task = "";
     },
     deleteTask(index) {
@@ -120,7 +120,6 @@ export default {
     editTask(index) {
       this.task = this.tasks[index].name;
       this.edittedTask = index;
-      //this.edittedTask = null;
     },
     changeStatus(index) {
       let newStatus = this.availableStatus.indexOf(this.tasks[index].status);
