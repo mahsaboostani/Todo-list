@@ -7,6 +7,11 @@ The data will be saved on your local storage.
 
 ![image](images/image.png)
 
+# indexedDB
+This project uses localstorage to save data. If you want to use `indexedDB` you can use indexeddb branch.  
+`git checkout indexeddb`
+
+
 # Run
 You can simply run `npm install` to install all dependencies. Then you can run project with `npm run serve`.
 
